@@ -1,0 +1,8 @@
+#include<LPC21xx.h>
+int main()
+	{
+		T0PR=15-1;
+	  T0TCR=0X01;	
+		while(T0TC<500);
+		T0TCR=0X00;
+	}
